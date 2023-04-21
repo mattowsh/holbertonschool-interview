@@ -1,12 +1,9 @@
-# <a> <img src="https://cdn-icons-png.flaticon.com/512/6747/6747010.png" alt="flaticon" width=6%></img></a> **Interview Preparation**
+# <a> <img src="https://cdn-icons-png.flaticon.com/512/6747/6747010.png" alt="flaticon" width=5%></img></a> **Interview Preparation**
 
 `Topic:` **Interview task practice**
 
 `Type of files:` tasks and projects
 
-`Career:` **Machine Learning specialization**, 1st trimester
-
-`Location:` Holberton School
 
 ## Curriculum
 - Lockboxes
