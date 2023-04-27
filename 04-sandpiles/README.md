@@ -1,4 +1,4 @@
-# <a> <img src="https://cdn-icons-png.flaticon.com/512/6747/6747010.png" alt="flaticon" width=5%></img></a> **IV. Sandpiles**
+# <a> <img src="https://cdn-icons-png.flaticon.com/512/6747/6747010.png" alt="flaticon" width=5%></img></a> **Sandpiles**
 
 `Topic:` **Interview task practice**
 
