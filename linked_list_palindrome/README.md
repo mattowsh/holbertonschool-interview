@@ -11,9 +11,11 @@ Write a function in C that checks if a singly linked list is a palindrome:
 - Prototype: 
 `int is_palindrome(listint_t **head);`
 
-- Return: 1 if is a palindrome, 0 if not, 2 if malloc can't find memory space
+- Return: 1 if is a palindrome, 0 otherwise
 
 - An empty list is considered a palindrome
+
+- You can not use `malloc`
 
 ### Example
 ```

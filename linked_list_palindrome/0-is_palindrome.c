@@ -28,7 +28,7 @@ size_t list_len(const listint_t *h)
 /**
  * is_palindrome - Checks if a singly linked list is a palindrome
  * @head : th first node
- * Return: 1 if is a palindrome, 0 if not, 2 if malloc can't find memory space
+ * Return: 1 if is a palindrome, 0 otherwise
  * Note: an empty list is considered a palindrome :)
 */
 
@@ -36,17 +36,12 @@ int is_palindrome(listint_t **head)
 {
 	unsigned int length = list_len(*head);
 	unsigned int i;
-	int *numbers, j;
+	int numbers[4096], j;
 	listint_t *aux;
 
 	/* Check if head is an empty linked list or has 1 element*/
 	if (!length || length == 1)
 		return (1);
-
-	/* Create an array to save all linked list elements */
-	numbers = malloc(length + 1 * sizeof(int));
-	if (!numbers)
-		return (2);
 
 	/* Save the element in an array */
 	for (i = 0; *head != NULL; i++)
