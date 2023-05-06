@@ -38,7 +38,7 @@ if __name__ == "__main__":
             # Print all data after every 10 lines:
             if qty_lines == 9:
                 print_all_stats()
-                qty_lines += 1
+                qty_lines -= 1
             qty_lines += 1
 
     # Contemplate case: keyboard interruption (CTRL + C)
