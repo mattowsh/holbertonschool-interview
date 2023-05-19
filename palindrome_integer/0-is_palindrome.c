@@ -12,7 +12,7 @@
 int is_palindrome(unsigned long n)
 {
 	unsigned int i, j;
-	char str[8];
+	char str[10];
 
 	sprintf(str, "%ld", n);
 
