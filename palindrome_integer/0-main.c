@@ -1,34 +1,34 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #include "palindrome.h"
 
 /**
- * main - Entry point
+ * main - Check runtime of is_palindrome
  *
- * @ac: Arguments counter
- * @av: Arguments vector
- *
- * Return: EXIT_SUCCESS or EXIT_FAILURE
+ * Return: Always 0.
  */
-int main(int ac, char **av)
+int main(void)
 {
-    unsigned long n;
-    int ret;
+	unsigned long n;
+	clock_t start;
+	clock_t end;
+	clock_t diff;
+	
+	start = clock();
+	for (n = 0; n < 10000000; n++)
+	{
+		is_palindrome(n);
+	}
+	end = clock();
 
-    if (ac < 2)
-    {
-        fprintf(stderr, "Usage: %s arg\n", av[0]);
-        return (EXIT_FAILURE);
-    }
+	diff = (double)(end - start) / 1000;
 
-    n = (unsigned long)(atol(av[1]));
-    ret = is_palindrome(n);
+	if (diff > 1000) /* More than 1 second */
+		printf("Runtime too long\n");
+	else
+		printf("OK\n");
 
-    printf("%lu is ", n);
-    if (ret == 0)
-        printf("not ");
-    printf("a palindrome.\n");
-
-    return (EXIT_SUCCESS);
+	return (0);
 }
